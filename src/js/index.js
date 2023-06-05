@@ -23,7 +23,7 @@ fetchBreeds()
     );
 function addOptionOnSelect() {
     selectEl.innerHTML = `<option value="null">~Chose breed~</option>`;
-    markupOptions = arrName.map(el => {
+    const markupOptions = arrName.map(el => {
 
         return `<option value="${el.id}">${el.name}</option>`;
     }).join('');
