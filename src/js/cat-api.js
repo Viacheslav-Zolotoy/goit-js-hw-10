@@ -7,7 +7,7 @@ export function fetchBreeds() {
             throw new Error(resp.status);
         }
         return resp.json();
-    })
+    }).catch(error => console.log(error));
 };
 export function getInformationForCat() {
     loaderEl.style.display = 'block';
@@ -16,5 +16,5 @@ export function getInformationForCat() {
             throw new Error(resp.status);
         }
         return resp.json();
-    })
+    }).catch(error => console.log(error));
 };

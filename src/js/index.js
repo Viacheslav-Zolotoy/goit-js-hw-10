@@ -16,7 +16,8 @@ fetchBreeds()
         })
         addOptionOnSelect(arrName);
     })
-    .catch(() => {
+    .catch(error => {
+        console.log(error);
         Notify.failure('Oops! Something went wrong! Try reloading the page!');
     }
     );
@@ -40,7 +41,8 @@ function addActivityItem(event) {
     choseBreed = event.target.value;
     getInformationForCat(choseBreed)
         .then(markupInformationForCat)
-        .catch(() => {
+        .catch(error => {
+            console.log(error);
             Notify.failure('Oops! Something went wrong! Try reloading the page!');
         }
         );
