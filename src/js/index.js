@@ -2,7 +2,6 @@ import SlimSelect from 'slim-select';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchBreeds } from "./cat-api";
 import { getInformationForCat } from "./cat-api";
-export const KEY = 'live_Likxy1hq44RVw131OlqvY6KuP2xHl4ccDS0hEsaNSgvvpJfLPdErDM9G3sctUFME';
 export const selectEl = document.querySelector('.breed-select');
 const catInfoEl = document.querySelector('.cat-info');
 export const loaderEl = document.querySelector('.loader');

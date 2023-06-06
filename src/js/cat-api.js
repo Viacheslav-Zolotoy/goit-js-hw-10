@@ -1,6 +1,6 @@
-import { KEY } from "./index";
 import { choseBreed } from "./index";
 import { loaderEl } from "./index";
+const KEY = 'live_Likxy1hq44RVw131OlqvY6KuP2xHl4ccDS0hEsaNSgvvpJfLPdErDM9G3sctUFME';
 export function fetchBreeds() {
     return fetch(`https://api.thecatapi.com/v1/breeds?api_key=${KEY}`).then(resp => {
         if (!resp.ok) {
